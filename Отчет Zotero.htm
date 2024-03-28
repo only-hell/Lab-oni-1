@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="script-src 'none'; media-src 'none'">
+		<title>Отчет Zotero</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_RP2SQ2ET" class="item bookSection">
+			<h2>Probabilistic Public Key Encryption with Equality Test</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Раздел книги</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Guomin Yang</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Chik How Tan</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Qiong Huang</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Duncan S. Wong</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Josef Pieprzyk</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>David Hutchison</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Takeo Kanade</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Josef Kittler</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Jon M. Kleinberg</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Friedemann Mattern</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>John C. Mitchell</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Moni Naor</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Oscar Nierstrasz</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>C. Pandu Rangan</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Bernhard Steffen</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Madhu Sudan</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Demetri Terzopoulos</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Doug Tygar</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Moshe Y. Vardi</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Gerhard Weikum</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>We present a (probabilistic) public key encryption (PKE) 
+scheme such that when being implemented in a bilinear group, anyone is 
+able to check whether two ciphertexts are encryptions of the same 
+message. Interestingly, bilinear map operations are not required in key 
+generation, encryption or decryption procedures of the PKE scheme, but 
+is only required when people want to do an equality test (on the 
+encrypted messages) between two ciphertexts that may be generated using 
+diﬀerent public keys. We show that our PKE scheme can be used in 
+diﬀerent applications such as searchable encryption and partitioning 
+encrypted data. Moreover, we show that when being implemented in a 
+non-bilinear group, the security of our PKE scheme can be strengthened 
+from One-Way CCA to a weak form of IND-CCA.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2010</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="http://link.springer.com/10.1007/978-3-642-11925-5_9">http://link.springer.com/10.1007/978-3-642-11925-5_9</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>29.02.2024, 13:11:36</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>Series Editors: _:n3
+Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-642-11925-5_9</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>5985</td>
+					</tr>
+					<tr>
+					<th>Место</th>
+						<td>Berlin, Heidelberg</td>
+					</tr>
+					<tr>
+					<th>Издатель</th>
+						<td>Springer Berlin Heidelberg</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-642-11924-8 978-3-642-11925-5</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>119-131</td>
+					</tr>
+					<tr>
+					<th>Название книги</th>
+						<td>Topics in Cryptology - CT-RSA 2010</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>14.03.2024, 11:43:06</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>21.03.2024, 12:16:48</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Криптография</li>
+					<li>Bilinear Map</li>
+					<li>Шифрованиес возможностью поиска</li>
+					<li>Адаптивные атаки с выбранным зашифрованным текстом</li>
+					<li>Сравнение зашифрованного текста</li>
+					<li>Шифрование открытым ключом</li>
+					<li>Случайный оракул</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_DNSSGHG5">
+<div><div data-schema-version="8"><p>Предложен метод PKE with Ciphertext Comparability in Bilinear Groups + анализ уязвимостей PEKS.</p>
+<p></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_AX7SZZAS">Yang и др. - 2010 - Probabilistic Public Key Encryption with Equality .pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_IGI6ZLYA" class="item bookSection">
+			<h2>Key-Privacy in Public-Key Encryption</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Раздел книги</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Mihir Bellare</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Alexandra Boldyreva</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Anand Desai</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>David Pointcheval</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Colin Boyd</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Gerhard Goos</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Juris Hartmanis</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Jan Van Leeuwen</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>We consider a security property of encryption schemes that has
+ been surfacing increasingly often of late. We call it “key-privacy” or 
+“anonymity”. It asks that an eavesdropper in possession of a ciphertext 
+not be able to tell which speciﬁc key, out of a set of known public 
+keys, is the one under which the ciphertext was created— meaning the 
+receiver is anonymous from the point of view of the adversary. We 
+investigate the anonymity of known encryption schemes. We prove that the
+ El Gamal scheme provides anonymity under chosen-plaintext attack 
+assuming the Decision Diﬃe-Hellman problem is hard and that the 
+Cramer-Shoup scheme provides anonymity under chosen-ciphertext attack 
+under the same assumption. We also consider anonymity for trapdoor 
+permutations. Known attacks indicate that the RSA trapdoor permutation 
+is not anonymous and neither are the standard encryption schemes based 
+on it. We provide a variant of RSA-OAEP that provides anonymity in the 
+random oracle model assuming RSA is one-way. We also give constructions 
+of anonymous trapdoor permutations, assuming RSA is one-way, which yield
+ anonymous encryption schemes in the standard model.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2001</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="http://link.springer.com/10.1007/3-540-45682-1_33">http://link.springer.com/10.1007/3-540-45682-1_33</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>29.02.2024, 14:24:44</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>Series Editors: _:n93
+Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/3-540-45682-1_33</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>2248</td>
+					</tr>
+					<tr>
+					<th>Место</th>
+						<td>Berlin, Heidelberg</td>
+					</tr>
+					<tr>
+					<th>Издатель</th>
+						<td>Springer Berlin Heidelberg</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-540-42987-6 978-3-540-45682-7</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>566-582</td>
+					</tr>
+					<tr>
+					<th>Название книги</th>
+						<td>Advances in Cryptology — ASIACRYPT 2001</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>14.03.2024, 11:43:17</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>14.03.2024, 13:26:36</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Криптография</li>
+					<li>Безопасность</li>
+					<li>OAEP</li>
+					<li>RSA</li>
+					<li>Cramer-Shoup</li>
+					<li>El Gamal</li>
+					<li>Анонимность</li>
+					<li>Конфиденциальность ключа</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_2D6XJZN6">
+<div><div data-schema-version="8"><p>Описаны анонимные криптографические схемы на основе RSA и Cramer-Shoup</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_ZIJSSFJ5">Bellare и др. - 2001 - Key-Privacy in Public-Key Encryption.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_P5N9WDZL" class="item conferencePaper">
+			<h2>Optimizing public-key encryption for wireless clients</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Документ конференции</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>N.R. Potlapally</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>S. Ravi</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>A. Raghunathan</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>G. Lakshminarayana</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>Providing acceptable levels of security imposes significant 
+computational requirements on wireless clients, servers, and network 
+elements. These requirements are often beyond the modest processing 
+capabilities and energy (battery) resources available on wireless 
+clients. The relatively small sizes of wireless data transactions imply 
+that public-key encryption algorithms dominate the security processing 
+requirements.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2002</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="http://ieeexplore.ieee.org/document/997014/">http://ieeexplore.ieee.org/document/997014/</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>29.02.2024, 13:36:44</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Место</th>
+						<td>New York, NY, USA</td>
+					</tr>
+					<tr>
+					<th>Издатель</th>
+						<td>IEEE</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-0-7803-7400-3</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>1050-1056</td>
+					</tr>
+					<tr>
+					<th>Назв. трудов</th>
+						<td>2002 IEEE International Conference on Communications. Conference Proceedings. ICC 2002 (Cat. No.02CH37333)</td>
+					</tr>
+					<tr>
+					<th>Назв. конфер.</th>
+						<td>IEEE International Conference on Communications</td>
+					</tr>
+					<tr>
+					<th>ЦИО/DOI</th>
+						<td><a href="http://doi.org/10.1109/ICC.2002.997014">10.1109/ICC.2002.997014</a></td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>14.03.2024, 11:43:08</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>14.03.2024, 13:08:26</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Криптография</li>
+					<li>Безопасность</li>
+					<li>Эффективность и производительность</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_9ZDTK372">
+<div><div data-schema-version="8"><p>описаны методы оптимизации PKE алгоритмов</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_8HG97537">Potlapally и др. - 2002 - Optimizing public-key encryption for wireless clie.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ZL9PLQHE" class="item conferencePaper">
+			<h2>Keyword Search in Spatial Databases: Towards Searching by Document</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Документ конференции</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Dongxiang Zhang</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Yeow Meng Chee</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Anirban Mondal</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Anthony K. H. Tung</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Masaru Kitsuregawa</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>This work addresses a novel spatial keyword query called the 
+m-closest keywords (mCK) query. Given a database of spatial objects, 
+each tuple is associated with some descriptive information represented 
+in the form of keywords. The mCK query aims to ﬁnd the spatially closest
+ tuples which match m user-speciﬁed keywords. Given a set of keywords 
+from a document, mCK query can be very useful in geotagging the document
+ by comparing the keywords to other geotagged documents in a database.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2009</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Краткое назв.</th>
+						<td>Keyword Search in Spatial Databases</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="http://ieeexplore.ieee.org/document/4812446/">http://ieeexplore.ieee.org/document/4812446/</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>29.02.2024, 14:16:03</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>ISSN: 1084-4627</td>
+					</tr>
+					<tr>
+					<th>Место</th>
+						<td>Shanghai, China</td>
+					</tr>
+					<tr>
+					<th>Издатель</th>
+						<td>IEEE</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-4244-3422-0</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>688-699</td>
+					</tr>
+					<tr>
+					<th>Назв. трудов</th>
+						<td>2009 IEEE 25th International Conference on Data Engineering</td>
+					</tr>
+					<tr>
+					<th>Назв. конфер.</th>
+						<td>2009 IEEE 25th International Conference on Data Engineering (ICDE)</td>
+					</tr>
+					<tr>
+					<th>ЦИО/DOI</th>
+						<td><a href="http://doi.org/10.1109/ICDE.2009.77">10.1109/ICDE.2009.77</a></td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>14.03.2024, 11:43:14</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>21.03.2024, 15:04:12</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Эффективность и производительность</li>
+					<li>Поиск по ключевым словам</li>
+					<li>Стандартизация и оценка</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_BZRJQ8LI">
+<div><div data-schema-version="8"><p>Описаны различные методы поиска ключевых слов + выработаны рекоммендации по их использованию</p>
+<p></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_KHFDJH39">Zhang и др. - 2009 - Keyword Search in Spatial Databases Towards Searc.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_A44EGLQL" class="item conferencePaper">
+			<h2>Public Key Encryption with Keyword Search Revisited</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Документ конференции</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Joonsang Baek</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Reihaneh Safavi-Naini</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Willy Susilo</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Osvaldo Gervasi</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Beniamino Murgante</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Antonio Laganà</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>David Taniar</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Youngsong Mun</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Marina L. Gavrilova</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>The public key encryption with keyword search (PEKS) scheme, 
+proposed by Boneh, Di Crescenzo, Ostrovsky and Persiano, enables one to 
+search for encrypted keywords without compromising the security of the 
+original data. In this paper, we address two important issues of a PEKS 
+scheme, “removing secure channel” and “refreshing keywords”, which have 
+not been considered in Boneh et al.’s paper. We point out the 
+inefficiency of the original PEKS scheme due to the use of the secure 
+channel. We resolve this problem by constructing an efficient PEKS 
+scheme that removes a secure channel. We then argue that care must be 
+taken when keywords are used frequently in the PEKS scheme as this 
+situation might contradict the security of PEKS.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2008</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>Springer Link</td>
+					</tr>
+					<tr>
+					<th>Место</th>
+						<td>Berlin, Heidelberg</td>
+					</tr>
+					<tr>
+					<th>Издатель</th>
+						<td>Springer</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-540-69839-5</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>1249-1259</td>
+					</tr>
+					<tr>
+					<th>Назв. трудов</th>
+						<td>Computational Science and Its Applications – ICCSA 2008</td>
+					</tr>
+					<tr>
+					<th>ЦИО/DOI</th>
+						<td><a href="http://doi.org/10.1007/978-3-540-69839-5_96">10.1007/978-3-540-69839-5_96</a></td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>21.03.2024, 13:33:51</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>21.03.2024, 13:38:52</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Криптография</li>
+					<li>Безопасность</li>
+					<li>Поиск по ключевым словам</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_4L2GNVV4">
+<div><div data-schema-version="8"><p>описан SCF-PEKS метод шифрования</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_EHAGZ4Q6">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_8IE6ZCYS" class="item journalArticle">
+			<h2>Public key encryption with equality test in the standard model</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Hyung Tae Lee</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>San Ling</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Jae Hong Seo</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Huaxiong Wang</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Taek-Young Youn</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://linkinghub.elsevier.com/retrieve/pii/S0020025516322290">https://linkinghub.elsevier.com/retrieve/pii/S0020025516322290</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>29.02.2024, 13:44:10</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>516</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>89-108</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>Information Sciences</td>
+					</tr>
+					<tr>
+					<th>ЦИО/DOI</th>
+						<td><a href="http://doi.org/10.1016/j.ins.2019.12.023">10.1016/j.ins.2019.12.023</a></td>
+					</tr>
+					<tr>
+					<th>Сокращ. журнала</th>
+						<td>Information Sciences</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>00200255</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>14.03.2024, 11:43:10</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>21.03.2024, 15:04:30</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Криптография</li>
+					<li>Безопасность</li>
+					<li>Эффективность и производительность</li>
+					<li>Поиск по ключевым словам</li>
+					<li>Стандартизация и оценка</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_JRJ8M3RD">
+<div><div data-schema-version="8"><p>Статья описывает алгоритм, использующий трехуровневую идентификационную иерархию и сильную одноразовую схему подписи</p>
+<p></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_CWZLSZAW">taelee2019.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_EWMSCXYD" class="item journalArticle">
+			<h2>A Public Key Cryptosystem and a Signature Scheme Based on Discrete Logarithms</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Taher Elgamal</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>A new signature scheme is proposed, together with an imple- 
+Hence both A and B are able to compute K,,. But, for an mentation of the
+ Diffie-Hellman key distribution scheme that achieves a intruder, 
+computing KA B appears to be difficult. It is not public key 
+cryptosystem. The security of both systems relies on the yet proved that
+ breaking the system is equivalent to comdifficulty of computing 
+discrete logarithms over finite fields.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>1985</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>Number: 4</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>31</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>IEEE TRANSACTIONS ON INFORMATION THEORY</td>
+					</tr>
+					<tr>
+					<th>Выпуск</th>
+						<td>4</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>14.03.2024, 11:43:11</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>21.03.2024, 15:03:06</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Криптография</li>
+					<li>Безопасность</li>
+					<li>RSA</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_BHU8C23Y">
+<div><div data-schema-version="8"><p>Описана схема цифровой подписи и криптосистема &nbsp;основанная на дискретных логарифмах</p>
+<p></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_ZGUC29K7">Elgamal - 1985 - A Public Key Cryptosystem and a Signature Scheme B.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_J5QXKUT8" class="item journalArticle">
+			<h2>PKE-AET: Public Key Encryption with Authorized Equality Test</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Kaibin Huang</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Raylin Tso</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Yu-Chi Chen</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Sk Md Mizanur Rahman</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Ahmad Almogren</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Atif Alamri</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2015</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Краткое назв.</th>
+						<td>PKE-AET</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://academic.oup.com/comjnl/article-lookup/doi/10.1093/comjnl/bxv025">https://academic.oup.com/comjnl/article-lookup/doi/10.1093/comjnl/bxv025</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>29.02.2024, 14:14:16</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>Number: 10</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>58</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>2686-2697</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>The Computer Journal</td>
+					</tr>
+					<tr>
+					<th>ЦИО/DOI</th>
+						<td><a href="http://doi.org/10.1093/comjnl/bxv025">10.1093/comjnl/bxv025</a></td>
+					</tr>
+					<tr>
+					<th>Выпуск</th>
+						<td>10</td>
+					</tr>
+					<tr>
+					<th>Сокращ. журнала</th>
+						<td>The Computer Journal</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>0010-4620, 1460-2067</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>14.03.2024, 11:43:13</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>21.03.2024, 15:04:18</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Криптография</li>
+					<li>Безопасность</li>
+					<li>Тест на равенство</li>
+					<li>Многопользовательская настройка</li>
+					<li>Шифрованиес возможностью поиска</li>
+					<li>Точность авторизации</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_MR4S2KPM">
+<div><div data-schema-version="8"><p>в этой статье представлен метод шифрования PKE-AET и описаны его преимущества над PKEET</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_8RDYYP9T">Huang и др. - 2015 - PKE-AET Public Key Encryption with Authorized Equ.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_4PVHVPXG" class="item journalArticle">
+			<h2>Public Key Encryption Schemes Supporting Equality Test with Authorization of Diﬀerent Granularity</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Qiang Tang</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>In this paper, we extended the work about public key 
+encryption schemes supporting ﬁne-grained authorization (FG-PKEET), done
+ by Tang (2011b). First of all, we correct some ﬂaws in Tang (2011b) and
+ discuss how to extend the proposed cryptosystem to support approximate 
+equality test. Secondly, we present a comparison between FG-PKEET and 
+other similar primitives including AoN-PKEET by Tang (2011a) and PKEET 
+by Yang et al. (2010), and demonstrate their diﬀerences in complexity 
+and achieved security. Thirdly, to mitigate the inherent oﬄine message 
+recovery attacks, we extend FG-PKEET to a two-proxy setting, where two 
+proxies need to collaborate in order to perform an equality test. 
+Finally, we propose a cryptosystem and prove its security in the 
+two-proxy setting.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2012</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>nt. J. Applied Cryptography</td>
+					</tr>
+					<tr>
+					<th>Выпуск</th>
+						<td>4</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>14.03.2024, 11:43:16</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>21.03.2024, 15:05:28</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Тест на равенство</li>
+					<li>Точность авторизации</li>
+					<li>Шифрование открытым ключом</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_XRH6H7E3">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2Flocal%2FWgYPyQg5%2Fitems%2FRP2SQ2ET%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2Flocal%2FWgYPyQg5%2Fitems%2FRP2SQ2ET%22%2C%22type%22%3A%22chapter%22%2C%22abstract%22%3A%22We%20present%20a%20(probabilistic)%20public%20key%20encryption%20(PKE)%20scheme%20such%20that%20when%20being%20implemented%20in%20a%20bilinear%20group%2C%20anyone%20is%20able%20to%20check%20whether%20two%20ciphertexts%20are%20encryptions%20of%20the%20same%20message.%20Interestingly%2C%20bilinear%20map%20operations%20are%20not%20required%20in%20key%20generation%2C%20encryption%20or%20decryption%20procedures%20of%20the%20PKE%20scheme%2C%20but%20is%20only%20required%20when%20people%20want%20to%20do%20an%20equality%20test%20(on%20the%20encrypted%20messages)%20between%20two%20ciphertexts%20that%20may%20be%20generated%20using%20di%EF%AC%80erent%20public%20keys.%20We%20show%20that%20our%20PKE%20scheme%20can%20be%20used%20in%20di%EF%AC%80erent%20applications%20such%20as%20searchable%20encryption%20and%20partitioning%20encrypted%20data.%20Moreover%2C%20we%20show%20that%20when%20being%20implemented%20in%20a%20non-bilinear%20group%2C%20the%20security%20of%20our%20PKE%20scheme%20can%20be%20strengthened%20from%20One-Way%20CCA%20to%20a%20weak%20form%20of%20IND-CCA.%22%2C%22container-title%22%3A%22Topics%20in%20Cryptology%20-%20CT-RSA%202010%22%2C%22event-place%22%3A%22Berlin%2C%20Heidelberg%22%2C%22ISBN%22%3A%22978-3-642-11924-8%22%2C%22language%22%3A%22en%22%2C%22note%22%3A%22Series%20Editors%3A%20_%3An3%5Cncollection-title%3A%20Lecture%20Notes%20in%20Computer%20Science%5CnDOI%3A%2010.1007%2F978-3-642-11925-5_9%22%2C%22page%22%3A%22119-131%22%2C%22publisher%22%3A%22Springer%20Berlin%20Heidelberg%22%2C%22publisher-place%22%3A%22Berlin%2C%20Heidelberg%22%2C%22source%22%3A%22DOI.org%20(Crossref)%22%2C%22title%22%3A%22Probabilistic%20Public%20Key%20Encryption%20with%20Equality%20Test%22%2C%22URL%22%3A%22http%3A%2F%2Flink.springer.com%2F10.1007%2F978-3-642-11925-5_9%22%2C%22volume%22%3A%225985%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Yang%22%2C%22given%22%3A%22Guomin%22%7D%2C%7B%22family%22%3A%22Tan%22%2C%22given%22%3A%22Chik%20How%22%7D%2C%7B%22family%22%3A%22Huang%22%2C%22given%22%3A%22Qiong%22%7D%2C%7B%22family%22%3A%22Wong%22%2C%22given%22%3A%22Duncan%20S.%22%7D%5D%2C%22editor%22%3A%5B%7B%22family%22%3A%22Pieprzyk%22%2C%22given%22%3A%22Josef%22%7D%5D%2C%22collection-editor%22%3A%5B%7B%22family%22%3A%22Hutchison%22%2C%22given%22%3A%22David%22%7D%2C%7B%22family%22%3A%22Kanade%22%2C%22given%22%3A%22Takeo%22%7D%2C%7B%22family%22%3A%22Kittler%22%2C%22given%22%3A%22Josef%22%7D%2C%7B%22family%22%3A%22Kleinberg%22%2C%22given%22%3A%22Jon%20M.%22%7D%2C%7B%22family%22%3A%22Mattern%22%2C%22given%22%3A%22Friedemann%22%7D%2C%7B%22family%22%3A%22Mitchell%22%2C%22given%22%3A%22John%20C.%22%7D%2C%7B%22family%22%3A%22Naor%22%2C%22given%22%3A%22Moni%22%7D%2C%7B%22family%22%3A%22Nierstrasz%22%2C%22given%22%3A%22Oscar%22%7D%2C%7B%22family%22%3A%22Pandu%20Rangan%22%2C%22given%22%3A%22C.%22%7D%2C%7B%22family%22%3A%22Steffen%22%2C%22given%22%3A%22Bernhard%22%7D%2C%7B%22family%22%3A%22Sudan%22%2C%22given%22%3A%22Madhu%22%7D%2C%7B%22family%22%3A%22Terzopoulos%22%2C%22given%22%3A%22Demetri%22%7D%2C%7B%22family%22%3A%22Tygar%22%2C%22given%22%3A%22Doug%22%7D%2C%7B%22family%22%3A%22Vardi%22%2C%22given%22%3A%22Moshe%20Y.%22%7D%2C%7B%22family%22%3A%22Weikum%22%2C%22given%22%3A%22Gerhard%22%7D%5D%2C%22accessed%22%3A%7B%22date-parts%22%3A%5B%5B%222024%22%2C2%2C29%5D%5D%7D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222010%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><p>Предложен метод PKE with Ciphertext Comparability in Bilinear Groups + анализ уязвимостей PEKS.</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_7FD2NYB2">Tang - Public Key Encryption Schemes Supporting Equality .pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SIJ346F3" class="item journalArticle">
+			<h2>An Empirical Performance Evaluation of Relational Keyword Search Techniques</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Joel Coffman</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Alfred C. Weaver</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>Extending the keyword search paradigm to relational data has 
+been an active area of research within the database and IR community 
+during the past decade. Many approaches have been proposed, but despite 
+numerous publications, there remains a severe lack of standardization 
+for the evaluation of proposed search techniques. Lack of 
+standardization has resulted in contradictory results from different 
+evaluations, and the numerous discrepancies muddle what advantages are 
+proffered by different approaches. In this paper, we present the most 
+extensive empirical performance evaluation of relational keyword search 
+techniques to appear to date in the literature. Our results indicate 
+that many existing search techniques do not provide acceptable 
+performance for realistic retrieval tasks. In particular, memory 
+consumption precludes many search techniques from scaling beyond small 
+data sets with tens of thousands of vertices. We also explore the 
+relationship between execution time and factors varied in previous 
+evaluations; our analysis indicates that most of these factors have 
+relatively little impact on performance. In summary, our work confirms 
+previous claims regarding the unacceptable performance of these search 
+techniques and underscores the need for standardization in 
+evaluations—standardization exemplified by the IR community.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2014</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="http://ieeexplore.ieee.org/document/6361392/">http://ieeexplore.ieee.org/document/6361392/</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>29.02.2024, 14:31:34</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>Number: 1</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>26</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>30-42</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>IEEE Transactions on Knowledge and Data Engineering</td>
+					</tr>
+					<tr>
+					<th>ЦИО/DOI</th>
+						<td><a href="http://doi.org/10.1109/TKDE.2012.228">10.1109/TKDE.2012.228</a></td>
+					</tr>
+					<tr>
+					<th>Выпуск</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>Сокращ. журнала</th>
+						<td>IEEE Trans. Knowl. Data Eng.</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1041-4347</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>14.03.2024, 11:43:19</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>21.03.2024, 15:04:04</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Эффективность и производительность</li>
+					<li>Поиск по ключевым словам</li>
+					<li>Стандартизация и оценка</li>
+					<li>Эмперическая оценка</li>
+					<li>Реляционная база данных</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_XRCGDH7G">
+<div><div data-schema-version="8"><p>Систематическое исследование производительности техник поиска по ключевым словам</p>
+<p></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_A8T74FBX">Coffman и Weaver - 2014 - An Empirical Performance Evaluation of Relational .pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_FH76FUPA" class="item journalArticle">
+			<h2>Semi-generic construction of public key encryption and identity-based encryption with equality test</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Hyung Tae Lee</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>San Ling</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Jae Hong Seo</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Huaxiong Wang</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://linkinghub.elsevier.com/retrieve/pii/S0020025516307654">https://linkinghub.elsevier.com/retrieve/pii/S0020025516307654</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>29.02.2024, 14:42:31</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>373</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>419-440</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>Information Sciences</td>
+					</tr>
+					<tr>
+					<th>ЦИО/DOI</th>
+						<td><a href="http://doi.org/10.1016/j.ins.2016.09.013">10.1016/j.ins.2016.09.013</a></td>
+					</tr>
+					<tr>
+					<th>Сокращ. журнала</th>
+						<td>Information Sciences</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>00200255</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>14.03.2024, 11:43:21</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>21.03.2024, 15:04:26</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Криптография</li>
+					<li>Безопасность</li>
+					<li>Тест на равенство</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_TRMD75ZP">
+<div><div data-schema-version="8"><p>в этой статье представлен метод semi-generic PKE with equality test </p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_CHIYR8E5">Lee и др. - 2016 - Semi-generic construction of public key encryption.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_L7X3Z6KQ" class="item journalArticle">
+			<h2>The Diffie–Hellman Protocol</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Ueli M. Maurer</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Stefan Wolf</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>The 1976 seminal paper of Diffie and Hellman is a landmark in 
+the history of cryptography. They introduced the fundamental concepts of
+ a trapdoor one-way function, a public-key cryptosystem, and a digital 
+signature scheme. Moreover, they presented a protocol, the so-called 
+Diffie–Hellman protocol, allowing two parties who share no secret 
+information initially, to generate a mutual secret key. This paper 
+summarizes the present knowledge on the security of this protocol.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2000</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>Springer Link</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://doi.org/10.1023/A:1008302122286">https://doi.org/10.1023/A:1008302122286</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>21.03.2024, 13:50:44</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>19</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>147-171</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>Designs, Codes and Cryptography</td>
+					</tr>
+					<tr>
+					<th>ЦИО/DOI</th>
+						<td><a href="http://doi.org/10.1023/A:1008302122286">10.1023/A:1008302122286</a></td>
+					</tr>
+					<tr>
+					<th>Выпуск</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Сокращ. журнала</th>
+						<td>Designs, Codes and Cryptography</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1573-7586</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>21.03.2024, 13:50:44</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>21.03.2024, 13:53:24</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>Криптография</li>
+					<li>Безопасность</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_I3G9MZUQ">
+<div><div data-schema-version="8"><p>в этой статье описывается протокол Диффи-Хельмана, на основе которого написаны PKE алгоритмы</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_WY2KUF43">Full Text PDF					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>
